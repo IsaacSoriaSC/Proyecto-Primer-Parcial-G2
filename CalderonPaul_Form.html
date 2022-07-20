@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/CalderonPaul_Styles.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Registro Vehiculo</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo">
+        </div>
+
+        <nav class="lis-inicio">
+            <ul>
+                <li><a href="MongeFrank.html">Inicio</a></li>
+                <li><a href="Espinoza_Dayanna.html">Nosotros</a></li>
+                <li><a href="CalderonPaul.html">Servicios</a></li>
+                <li><a href="Soria.html">Catalogo</a></li>
+                <li><a href="MORANTE_MURILLO_CAPACITACIONES.html">Capacitacion</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form class="formulario_registro">
+
+            <h1>Formulario de registro</h1> <br>
+            <h2>Datos del dueño del vehículo</h2> <br>
+
+            <div class="contenido">
+                <div class="label"><label for="nombre">Ingrese sus nombres:</label> </div>
+                <div class="datos"><input type="text" placeholder="Escriba sus nombres" name="nombre" id="nombre"></div>
+            </div>
+
+            <div class="contenido">
+                <div class="label"><label for="apellido">Ingrese sus apellidos: </label></div>
+                <div class="datos"><input type="text" placeholder="Escriba sus apellidos" name="apellido" id="apellido">
+                </div>
+            </div>
+
+            <div class="contenido">
+                <div class="label"><label for="ciudad">Seleccione su ciudad:</label></div>
+                <div class="datos"> <select name="ciudad" id="ciudad">
+                        <option value="0">**Seleccionar**</option>
+                        <option value="1">Guayaquil</option>
+                        <option value="2">Manta</option>
+                        <option value="3">Samborondón</option>
+                        <option value="4">Petrillo</option>
+                        <option value="5">Quito</option>
+                        <option value="6">Salinas</option>
+                        <option value="7">La Libertad</option>
+                        <option value="8">Durán</option>
+                    </select> </div>
+            </div>
+
+            <div class="contenido">
+                <div class="label"><label for="correo">Ingrese su E-mail: </label></div>
+                <div class="datos"><input type="email" placeholder="pacl123@gmail.com" name="correo" id="correo"></div>
+            </div> <br>
+
+            <h2>Datos del vehículo</h2> <br>
+
+            <div class="contenido">
+                <div class="label"><label for="placa">Escriba la placa de su vehículo:</label></div>
+                <div class="datos"><input type="text" placeholder="GSG-1234" name="placa" id="placa"></div>
+            </div>
+
+
+            <div class="contenido">
+                <div class="label"><label>Escoja la marca de su vehículo:</label></div>
+                <div class="datos">
+                    <input type="radio" name="marca" class="marca"> Nissan
+                    <input type="radio" name="marca" class="marca"> Mazda
+                    <br> 
+                    <input type="radio" name="marca" class="marca"> Toyota
+                    <input type="radio" name="marca" class="marca"> Hyundai
+                    <br> 
+                    <input type="radio" name="marca" class="marca"> Chery
+                    <input type="radio" name="marca" class="marca"> Dongfeng
+                    <br> 
+                    <input type="radio" name="marca" class="marca"> Chevrolet
+                </div>
+            </div>
+
+            <div class="label"><label for="aniofab">Seleccione el año de fabricación de su vehículo:</label></div>
+            <div class="datos"> <select name="aniofab" id="aniofab">
+                    <option value="0">**Seleccionar**</option>
+                    <option value="1">2022</option>
+                    <option value="2">2021</option>
+                    <option value="3">2020</option>
+                    <option value="4">2019</option>
+                    <option value="5">2018</option>
+                    <option value="6">2017</option>
+                    <option value="7">2016</option>
+                    <option value="8">2015</option>
+                </select>
+            </div>
+
+
+            <input class="boton" type="submit" value="Registrar">
+        </form>
+    </main>
+    <script src="js/CalderonPaul_Validacion.js"></script>
+    <footer>
+        <div class="logof">
+            <img src="./img/logo.jpg" alt="Logo">
+        </div>
+
+        <div class="about-us">
+            <h3>Nosotros</h3>
+            <p>Contamos con cuatro talleres especializados para las marcas: Chevrolet, Hyundai, Kía, Ford, Mazda,
+                Toyota, Nissan, Renault, Audi y Volkswagen.</p>
+        </div>
+        <div class="contactanos">
+            <h3>Contáctenos</h3>
+            <ul>
+                <li><span><img src="#" alt=""></span>(04) 2123456</li>
+                <li><span><a style="color: white;" href="mailto:Padarikeismotors@gmail.com">PADARIKEIS
+                            AUTOMOTORS</a></span></li>
+                <li><span><img src="#" alt=""></span>Ciudadela "El guasmo"</li>
+            </ul>
+        </div>
+        <div class="Horario">
+            <h3>Horario de atención</h3>
+            <p>09:00 AM - 18:00 PM</p>
+        </div>
+    </footer>
+</body>
+
+</html>

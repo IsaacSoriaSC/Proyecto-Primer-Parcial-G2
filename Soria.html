@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="description" content="Taller Automotriz">
+        <meta name="keyword" content="HTML5,CSS3,JavaScript">
+        <link rel="stylesheet" href="css/estilos.css">
+        <title> Repuestos </title>
+        <style>
+        * {box-sizing:border-box}
+
+
+/* ----------------------------------- Contenedor Principal Slideshow -------------------------------------*/
+/* Contenedor de Slider */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border: black solid;
+  border-radius: 35px;
+  margin-bottom: 40px;
+}
+/* Centrar Slider */
+.Slide {
+  text-align: center;
+}
+/* ----------------------------------- Fin Contenedor Principal Slideshow -------------------------------------*/
+
+
+
+
+/* ---------------------------------------------   Botones -------------------------------------*/
+/* Avanzar / Retroceder */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Boton de Siguiente (Derecha) / Radio redondo esquinas */
+.next {
+  right: 0;
+  border-radius: 10px 10px 10px 10px;
+}
+/* Boton de Retroceso (Izquierda) / Radio redondo esquinas */
+.prev {
+  left: 0;
+  border-radius: 10px 10px 10px 10px;
+}
+/* Hover de Botones de Acción */
+.prev:hover, .next:hover {
+  background-color: rgb(0,0,0);
+  color: white;
+}
+/* Botones de Indice (Debajo del Slider)*/
+.Punto {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  margin-top: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease;
+}
+/* --------------------------------------------- Fin Botones -------------------------------------*/
+
+
+
+
+
+
+/* ------------------------------------------ Contenido Slideshow -------------------------------------*/
+/* Texto del Slide actual */
+.active, .Punto:hover {
+  background-color: #717171;
+}
+.Imagen{
+    width: 400px;
+    height: 400px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Parrafo{
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.Nombres{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+/* ------------------------------------------ Fin Contenido Slideshow -------------------------------------*/
+
+#ContenedorP{
+            width: 98%;
+            margin: 10px;
+            margin-left: 64px;
+        }
+        #Seccion{
+            display: flex;
+            padding-left: 9.6%;
+        }
+        .Texto{
+            text-align: center;
+            border: 1px solid #0d1024;
+            border-radius: 10px;    
+            padding: 10px;
+            min-width: 500px;
+            margin-left: 10px;
+            margin-top: 10px;
+            width: 20px;
+        }
+        .TextoP{
+            padding-top: 10px;
+        }
+        #CataTitulo{
+            text-align: center;
+            margin: 15px;
+        }
+        #CataParrafo{
+            margin-top: 15px;
+        }
+        #ComprarButton{
+            text-align: center;
+            padding-bottom: 33px;
+        }
+        #ComprarButton a{
+            text-decoration: none;
+            color: black;
+            text-align: center;
+            font-size: 29px;
+            border: black solid;
+            margin: auto;
+            border-radius: 15px; 
+            padding-left: 5px;
+            padding-right: 5px;   
+        }
+        #ComprarButton a:hover{
+            background-color: black;
+            color: white;
+        }
+        </style>
+</head>
+
+
+
+
+
+
+<body>
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="Logo">
+    </div>
+    
+    <nav class="lis-inicio">
+        <ul>
+            <li><a href="MongeFrank.html">Inicio</a></li>
+            <li><a href="Espinoza_Dayanna.html">Nosotros</a></li>
+            <li><a href="CalderonPaul.html">Servicios</a></li>
+            <li><a href="Soria.html">Catalogo</a></li>
+            <li><a href="MORANTE_MURILLO_CAPACITACIONES.html">Capacitacion</a></li>
+    </ul>
+    </nav>
+    </header>
+    <br>
+    <br>
+    <div id="ContenedorP">
+        <div id="Seccion">
+            <div class="Texto">
+                <h4>Estándares de Calidad</h4>
+                <p class="TextoP">Nuestros repuestos automotrices cumplen con altos y rigurosos estándares de calidad para la seguridad de sus vehículos. Garantizamos el 100% de la calidad de nuestros productos, los cuales cuentan con garantia extendida. </p>
+            </div>
+            <div class="Texto">
+                <h4>Puestos de Venta</h4>
+                <p class="TextoP">Nuestros puntos de venta se encuentran ubicados en todo el país. Disponemos de atención en los comerciales C.CC Riocentro El Dorado; C.C Riocentro Norte; C.C La Alborada. Tenemos locales independientes en la Av León Febres Cordero Ribadeneyra 212b, Samborondón 170513</p>
+            </div>
+        </div>
+    </div>    
+    <div style="padding-top: 20px; padding-bottom: 20px;" id="CataTitulo">
+        <h2>Catálogo de Productos</h2>
+        <p style="margin-left: 200px; margin-right: 200px;" id="CataParrafo">Utilice nuestro catálogo deslizante para desplazarse entre los distintos repuestos que tiene para ofrecer nuestra marca. Para realizar una compra en línea por favor complete el formulario de pago, el formulario estará disponible una vez que seleccione el botón "Comprar Ahora" debajo del catálogo de productos.</p>
+    </div>
+<!-- Contenedor del Slideshow -->
+<div class="slideshow-container">
+
+    <!-- Imagenes del contenedor con texto -->
+    <div class="Slide">
+      <img class="Imagen" src="img/Sor1.webp" alt="Repuesto Automovil">
+      <h4 class="Nombres">Cilindro Hidráulico</h4>
+      <h4>$89.95</h4>
+      <p class="Parrafo">Cilindro dentro del cual se desplaza un émbolo o pistón, y que transforma la presión de un líquido mayormente aceite en energía mecánica. Son actuadores mecánicos que son usados para dar una fuerza a través de un recorrido lineal. </p>
+     </div>
+  
+    <div class="Slide">
+      <img class="Imagen" src="img/Sor2.png" alt="Repuesto Automovil">
+      <h4 class="Nombres">Tapa de Airbag HG270</h4>
+      <h4>$25.15</h4>
+      <p class="Parrafo">Tapa exterior de Airgbag modelo HG270 para automóviles marca Chevrolet Aveo, Sail, Camaro y Corvette. Se encuentran disponibles en distintos colores y modelos, este artículo se encuentra disponible hasta agotar Stock. </p>
+     </div>
+  
+    <div class="Slide">
+      <img class="Imagen" src="img/Sor3.webp" alt="Repuesto Automovil">
+      <h4 class="Nombres">Cinta Airbag Nissan Tiida</h4>
+      <h4>$20.55</h4>
+      <p class="Parrafo">Cinta automática Tiida marca Hybrid T45 para vehículos Nissan Tiida Segmento C. También se encuentra disponible para modelo Sentra V16, este artículo se encuentra disponible hasta agotar Stock </p>
+     </div>
+    
+    <div class="Slide">
+        <img class="Imagen" src="img/Sor4.webp" alt="Repuesto Automovil" >
+        <h4 class="Nombres">Aros de Pistón ISUZU</h4>
+        <h4>$79.95</h4>
+        <p class="Parrafo">Los aros de pistón son unos anillos de metal con una abertura que se insertan en las ranuras que recorren la superficie exterior de un pistón. Su función principal es la de sellar la cámara de combustión para que el combustible no pase al interior del cárter. </p>
+       </div>
+
+      <div class="Slide">
+        <img class="Imagen" src="img/Sor5.webp" alt="Repuesto Automovil">
+        <h4 class="Nombres">Bujía Spark Plug RC12YC</h4>
+        <h4>$10.05</h4>
+        <p class="Parrafo">Produce el encendido de la mezcla de combustible y oxígeno en los cilindros, mediante una chispa, en un motor de combustión interna de encendido provocado, tanto alternativo de ciclo Otto como Wankel. </p>
+      </div>  
+
+      <div class="Slide">
+        <img class="Imagen" src="img/Sor6.webp" alt="Repuesto Automovil">
+        <h4 class="Nombres">Anillos de Motor GB25RC</h4>
+        <h4>$54.93</h4>
+        <p class="Parrafo">Anillos para motor hidráulico modelo QL500. Reducen las fugas de los cilindros a un mínimo en condiciones reales de funcionamiento y proporcionan un control máximo de aceite. </p>
+       </div>
+
+      <div class="Slide">
+        <img class="Imagen" src="img/Sor7.jpg" alt="Repuesto Automovil">
+        <h4 class="Nombres">Cigueñal de Motor</h4>
+        <h4>$91.50</h4>
+        <p class="Parrafo">Cigueñal de eje giratorio que convierte el movimiento alternativo de un pistón en un movimiento giratorio. Se usa comúnmente en motores de combustión interna para realizar dicha operación, y permite que las ruedas impulsen el vehículo. </p>
+       </div>
+
+      <div class="Slide">
+        <img class="Imagen" src="img/Sor8.webp" alt="Repuesto Automovil">
+        <h4 class="Nombres">Mandos IA para Volante Kia</h4>
+        <h4>$18.20</h4>
+        <p class="Parrafo">Mandos de tipo Plug & Play para volantes de autos Kia. Compatible con automóviles Kia Sportage, Suv, Rio, Híbridos, Seltos. Este artículo se encuentra sujeto a garantía de 2 años hasta agotar Stock. </p>
+       </div>
+
+      <div class="Slide">
+        <img class="Imagen" src="img/Sor9.jpg" alt="Repuesto Automovil">
+        <h4 class="Nombres">Sensor Maf Lambda</h4>
+        <h4>$27.95</h4>
+        <p class="Parrafo">Sensor de oxígeno ubicado en el sistema de escape del vehículo y su principal función es analizar la cantidad de oxígeno presente en los gases de escape expulsados por el motor. </p>
+       </div>
+      
+      <div class="Slide">
+        <img class="Imagen" src="img/Sor10.webp" alt="Repuesto Automovil">
+        <h4 class="Nombres">Termostato Refrigerante Ford 2017</h4>
+        <h4>$45.78</h4>
+        <p class="Parrafo">El termostato del líquido refrigerante se encarga de medir la temperatura a la que circula este importante fluido, que tiene como misión mantener el motor a salvo de sobrecalentamientos que puedan dañar el radiador, entre otros elementos. </p>
+       </div>
+    
+      <div class="Slide">
+        <img class="Imagen" src="img/Sor11.webp" alt="Repuesto Automovil">
+        <h4 class="Nombres">Cinta de Bocina Espiral</h4>
+        <h4>$31.65</h4>
+        <p class="Parrafo">La cinta espiral conecta el volante a otros dispositivos eléctricos como el sistema de seguridad del airbag, el volumen de la radio y las selecciones de estación, bocina y controles de crucero. Puede fallar cuando los cables se desgastan y se rompen. </p>
+       </div>
+
+      <div class="Slide">
+        <img class="Imagen" src="img/Sor12.webp" alt="Repuesto Automovil">
+        <h4 class="Nombres">Perilla de Palanca de Cambios</h4>
+        <h4>$15.10</h4>
+        <p class="Parrafo">Perilla de palanca universal, se encuentra disponible en muchos modelos distintos, desde plásticos sencillos como uretano hasta metales preciosos como el platino. Artículo disponible según modelo de vehículo y hasta agotar Stock. </p>
+       </div>
+       
+  <!-- Botones de Indice/Index -->
+  <div style="text-align:center">
+    <span class="Punto" onclick="SlideActual(1)"></span> 
+    <span class="Punto" onclick="SlideActual(2)"></span> 
+    <span class="Punto" onclick="SlideActual(3)"></span> 
+    <span class="Punto" onclick="SlideActual(4)"></span> 
+    <span class="Punto" onclick="SlideActual(5)"></span> 
+    <span class="Punto" onclick="SlideActual(6)"></span> 
+    <span class="Punto" onclick="SlideActual(7)"></span> 
+    <span class="Punto" onclick="SlideActual(8)"></span> 
+    <span class="Punto" onclick="SlideActual(9)"></span> 
+    <span class="Punto" onclick="SlideActual(10)"></span> 
+    <span class="Punto" onclick="SlideActual(11)"></span> 
+    <span class="Punto" onclick="SlideActual(12)"></span> 
+    <!-- Botones de Acción -->
+    <a class="prev" onclick="Avanzar(-1)">&#10094;</a>
+    <a class="next" onclick="Avanzar(1)">&#10095;</a>
+  </div>
+  <br>
+
+  </div>
+
+<div id="ComprarButton">
+    <a href="SoriaFormularioPago.html">COMPRAR AHORA</a>
+</div>
+
+  <script>
+  var Indice = 1;
+MostrarSlide(Indice);
+
+function Avanzar(num) {
+  MostrarSlide(Indice = Indice + num);
+}
+
+function SlideActual(num) {
+  MostrarSlide(Indice = num);
+}
+
+function MostrarSlide(num) {
+  var i;
+  var Diapo = document.getElementsByClassName("Slide");
+  var Pts = document.getElementsByClassName("Punto");
+  if (num > Diapo.length) {Indice = 1} 
+  if (num < 1) {Indice = Diapo.length}
+  for (i = 0; i < Diapo.length; i++) {
+      Diapo[i].style.display = "none"; 
+  }
+  for (i = 0; i < Pts.length; i++) {
+      Pts[i].className = Pts[i].className.replace(" active", "");
+  }
+  Diapo[Indice-1].style.display = "block"; 
+  Pts[Indice-1].className += " active";
+}
+</script>
+<footer>
+    <div class="logof">
+        <img src="img/logo.jpg" alt="Logo">
+    </div>
+
+    <div class="about-us">
+        <h3>Nosotros</h3>
+        <p>Contamos con cuatro talleres especializados para las marcas: Chevrolet, Hyundai, Kía, Ford, Mazda, Toyota, Nissan, Renault, Audi y Volkswagen.</p>
+    </div>
+    <div class="contactanos">
+        <h3>Contáctenos</h3>
+        <ul>
+            <li><span><img src="#" alt=""></span>(04) 2123456</li>
+            <li><span><a style="color: white;" href="mailto:Padarikeismotors@gmail.com">PADARIKEIS AUTOMOTORS</a></span></li>
+            <li><span><img src="#" alt=""></span>Ciudadela "El guasmo"</li>
+        </ul>
+    </div>
+    <div class="Horario">
+        <h3>Horario de atención</h3>
+        <p>09:00 AM - 18:00 PM</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Registro</title>
+    <style>
+        main{
+            display: flex;
+            margin: 2%;
+            justify-content: center;            
+        }
+
+        .formulario_registro{
+            border: black solid 2px;
+            border-radius: 10px;
+            padding: 50px;
+            width: 50%;
+            min-width: 300px;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .formulario_registro .contenido{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .formulario_registro .label{
+            font-size: medium;
+            margin-top: 10px;
+        }
+
+        .formulario_registro input, .formulario-registro select{
+            padding: 10px;
+        }
+
+        .formulario_registro .datos{
+            font-size: medium;
+        }
+
+        .formulario_registro .boton{
+            width: 30%;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            color: aliceblue;
+            border: black solid 2px;
+            border-radius: 10px;
+            background-color:#0D1024;
+            font-size: 20px;
+            margin-left: 33%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo">
+        </div>
+        
+        <nav class="lis-inicio">
+            <ul>
+                <li><a href="MongeFrank.html">Inicio</a></li>
+                <li><a href="Espinoza_Dayanna.html">Nosotros</a></li>
+                <li><a href="CalderonPaul.html">Servicios</a></li>
+                <li><a href="Soria.html">Catalogo</a></li>
+                <li><a href="MORANTE_MURILLO_CAPACITACIONES.html">Capacitacion</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="formulario_registro"> 
+            
+            <h1>Formulario de registro</h1> <br>
+            <h2>Datos Personales</h2> <br>
+            
+            <div class="contenido">
+            <div class="label"><label for="nombre">Ingrese sus nombres:</label> </div>
+            <div class="datos"><input type="text" placeholder="Escriba su nombre" name="nombre" id="nombre"></div>
+            </div>
+            
+            <div class="contenido">
+            <div class="label"><label for="apellido">Ingrese sus apellidos: </label></div>
+            <div class="datos"><input type="text" placeholder="Escriba su apellido" name="apellido" id="apellido"></div>
+            </div>
+
+            <div class="contenido">
+            <div class="label"><label for="ciudad">Escoja su ciudad:</label></div>
+            <div class="datos"> <select name="ciudad" id="ciudad">
+                <option value="0">seleccionar</option>
+                <option value="1">Guayas </option>
+                <option value="2">Manabi</option>
+                <option value="3">Santa Elena</option>
+                <option value="4">Machala</option>
+                <option value="5">Latacunga</option>
+                <option value="6">Esmeralda</option>
+                <option value="7">Pichincha</option>
+                <option value="8">Los rios</option>
+            </select> </div>
+            </div>
+
+            <div class="contenido">
+            <div class="label"><label for="contraseña">Ingrese su contraseña:</label> </div>
+            <div class="datos"><input type="password" placeholder="Escriba su contraseña" name="contraseña" id="contraseña">
+            </div>
+            </div>
+
+            <div class="contenido">
+            <div class="label"><label for="correo">Ingrese su E-mail: </label></div>
+            <div class="datos"><input type="text" placeholder="ejemplo@gmail.com" name="correo" id="correo"></div> 
+            </div> <br>
+                        
+            <input class="boton" type="submit" value="Registrar" >
+        </form>
+    </main>    
+    <footer>
+        <div class="logof">
+            <img src="img/logo.jpg" alt="Logo">
+        </div>
+    
+        <div class="about-us">
+            <h3>Nosotros</h3>
+            <p>Contamos con cuatro talleres especializados para las marcas: Chevrolet, Hyundai, Kía, Ford, Mazda, Toyota, Nissan, Renault, Audi y Volkswagen.</p>
+        </div>
+        <div class="contactanos">
+            <h3>Contáctenos</h3>
+            <ul>
+                <li><span><img src="#" alt=""></span>(04) 2123456</li>
+                <li><span><a style="color: white;" href="mailto:Padarikeismotors@gmail.com">PADARIKEIS AUTOMOTORS</a></span></li>
+                <li><span><img src="#" alt=""></span>Ciudadeal "El guasmo"</li>
+            </ul>
+        </div>
+        <div class="Horario">
+            <h3>Horario de atención</h3>
+            <p>09:00 AM - 18:00 PM</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="js/Val-Monge2.js"></script>
+</body>
+</html>

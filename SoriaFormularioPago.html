@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="description" content="Taller Automotriz">
+        <meta name="keyword" content="HTML5,CSS3,JavaScript">
+        <title> Facturacion </title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .ContenedorPago{
+            display: flex;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+        #LogoContenedor{
+            width: 100px;
+            height: 100px;
+            margin-left: 255px;
+            margin-right: 20px;
+        }
+        #TituloForma{
+            padding-top: 31px;
+            font-size: 33px;
+            color: white;
+        }
+       
+        #Formulario{
+            padding-top: 20px;
+            margin-left: 90px;
+            border: 2px black solid;
+            max-width: 800px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            background-color: white;
+        }
+        #Formulario div{
+            padding: 12px;
+        }
+        #nombres{
+            margin-left: 12px;
+        }
+        #apellidos{
+            margin-left: 10px;
+        }
+        #telefono{
+            margin-left: 14px;
+        }
+        #correo{
+            margin-left: 38px;
+        }
+        #DivTarjeta{
+            display: flex;
+            margin-left: -11px;
+        }
+        #ContenedorPrincipalPago{
+            margin-left: 210px;
+            text-align: left;
+            border: 5px black solid;
+            max-width: 1000px;
+            border-radius: 10px;
+            background-color: #0D1024;
+            margin-bottom: 36px;
+        }
+        #Formulario label{
+            font-weight: bold;
+        }
+        .ClaseBotones{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .ClaseReferencia{
+            margin: 10px;
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo">
+        </div>
+        
+        <nav class="lis-inicio">
+            <ul>
+                <li><a href="MongeFrank.html">Inicio</a></li>
+                <li><a href="Espinoza_Dayanna.html">Nosotros</a></li>
+                <li><a href="CalderonPaul.html">Servicios</a></li>
+                <li><a href="Soria.html">Catalogo</a></li>
+                <li><a href="MORANTE_MURILLO_CAPACITACIONES.html">Capacitacion</a></li>
+                
+            </ul>
+        </nav>
+    </header><br><br>
+    <script src="js/SoriaValidacion.js"></script>
+<div id="ContenedorPrincipalPago">
+   <div class="ContenedorPago">
+    <img id="LogoContenedor" src="img/logo.jpg" alt="Logo Automotriz">
+    <h3 id="TituloForma">Formulario de Pago</h3>
+   </div>
+
+
+   <form id="Formulario" onsubmit="return Validacion();">
+    <div>
+        <label>Nombres:</label>
+        <input type="text" name="nombres" id="nombres" class="formItem" 
+      placeholder="Ingrese sus nombres"/>
+    </div>
+    <div>
+        <label>Apellidos:</label>
+        <input type="text" name="apellidos" id="apellidos" class="formItem"
+        placeholder="Ingrese sus apellidos"/>
+    </div>
+    <div>
+        <label>Telefono:</label>
+        <input type="text" name="telefono" id="telefono" class="formItem" 
+        placeholder="Ingrese número telefónico"/>
+    </div>
+    <div>
+        <label>Email:</label>
+        <input type="text" name="correo" id="correo" class="formItem"
+        placeholder="Ingrese su e-mail"/>
+    </div>
+   
+    <div>
+        <label>Entrega del Producto:</label>
+        <input class="Radio" id="Presen" type="radio" name="Entrega" value="P" /> Presencial
+        <input class="Radio" id="Domic" type="radio" name="Entrega" value="D" /> A Domicilio
+    </div>
+    <div>
+        <label>Tarjeta de Crédito:</label>
+        <select name="TarjetaOpt" id="TarjetaSelector" class="formItem">
+            <option value="0"> Seleccione...</option>
+            <option value="1">Visa</option>
+            <option value="2">Mastercard</option>
+            <option value="3">American Express</option>
+            <option value="4">Discover</option>
+        </select>
+
+    </div>
+    <div id="DivTarjeta">
+    <div>
+        <label>Número de Tarjeta:</label>
+        <input type="text" name="tarjeta" id="tarjeta" class="formItem" 
+        placeholder="Ingrese los 10 dígitos"/>
+    </div>
+    <div>
+        <label>CVC:</label>
+        <input type="text" name="tarjetaCVC" id="tarjetaCVC" class="formItem" 
+        placeholder="Ingrese los 4 dígitos"/>
+    </div>
+    </div>
+    <div>
+        <label>Fecha de Expiración:</label>
+        <input type="date" name="fecha" id="fecha" class="formItem"/>
+    </div>
+
+    <div>
+        <label>Referencia Domiciliaria</label> <br>
+        <textarea class="Referencia formItem" id="Refe" rows="4" cols="85" ></textarea>
+    </div>
+    <div class="ClaseBotones">
+        <input type="submit" class="Btn BtnEnviar" value="Enviar">
+        <input type="reset" class="Btn BtnLimpiar" value="Limpiar Datos">
+    </div>
+</form>
+<script src="js/SoriaValidacion.js"></script>
+    </div>
+    <footer>
+        <div class="logof">
+            <img src="img/logo.jpg" alt="Logo">
+        </div>
+    
+        <div class="about-us">
+            <h3>Nosotros</h3>
+            <p>Contamos con cuatro talleres especializados para las marcas: Chevrolet, Hyundai, Kía, Ford, Mazda, Toyota, Nissan, Renault, Audi y Volkswagen.</p>
+        </div>
+        <div class="contactanos">
+            <h3>Contáctenos</h3>
+            <ul>
+                <li><span><img src="#" alt=""></span>(04) 2123456</li>
+                <li><span><a style="color: white;" href="mailto:Padarikeismotors@gmail.com">PADARIKEIS AUTOMOTORS</a></span></li>
+                <li><span><img src="#" alt=""></span>Ciudadela "El guasmo"</li>
+            </ul>
+        </div>
+        <div class="Horario">
+            <h3>Horario de atención</h3>
+            <p>09:00 AM - 18:00 PM</p>
+        </div>
+    </footer>
+</body>
+
+</html>

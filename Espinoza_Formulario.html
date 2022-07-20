@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        
+        .title {
+            font-size: 30px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    
+        <!-- HEADER-->
+        <header>
+            <div class="logo">
+                <img src="img/logo.PNG" alt="Logo">
+            </div>
+            
+            <nav class="lis-inicio">
+                <ul>
+                    <li><a href="./MongeFrank.html">Inicio</a></li>
+                    <li><a href="Espinoza_Dayanna.html">Nosotros</a></li>
+                    <li><a href="CalderonPaul.html">Servicios</a></li>
+                    <li><a href="Soria.html">Catalogo</a></li>
+                    <li><a href="MORANTE_MURILLO_CAPACITACIONES.html">Capacitacion</a></li>
+                </ul>
+            </nav>
+        </header>
+    
+    <section class="sec4">
+        <article>
+        <h1 class="title">Trabaja Con Nosotros</h1>
+        <h2 class="sec4_title" >Postularme → </h2>
+        <div class="formularios">
+            <!-- onsubmit=return validar() PERMITE LLAMAR A LA FUNCION DE JAVASCRIPT QUE VALIDA EL FORMULARIO-->
+            <h3> Datos Personales</h3>
+            <form autocomplete="off" id="formContacto" onsubmit="validacion();">
+                <div class="datosform-input">
+                    <label>Cedula:</label>
+                    <input type="text" name="cedula" id="cedula" class="formItem" placeholder="XXXXXXXXXX" />
+                </div>
+                <div class="datosform-input">
+                    <label>Nombres:</label>
+                    <input type="text" name="nombres" id="nombres" class="formItem" placeholder="Ingresa tu nombre"/>
+                </div>
+                <div class="datosform-input">
+                    <label>Apellidos:</label>
+                    <input type="text" name="apellidos" id="apellidos" class="formItem" placeholder="Ingresa tu apellido"/>   
+                </div>
+                <div class="datosform-input">
+                    <label>Telefono:</label>
+                    <input type="text" name="telefono" id="telefono" class="formItem" placeholder="Ingresa tu telefono"/>
+                </div>
+                <div class="datosform-input">
+                    <label>Email:</label>
+                    <input type="text" name="correo" id="correo" class="formItem" placeholder="Ingrese su direccion de correo electronico"/>
+                </div>
+                <div class="datosform-input">
+                    <label>Fecha de Nacimiento:</label>
+                    <input type="date" name="fecha" id="fecha" class="formItem" />
+                </div>
+
+                <div class="genero ">
+                    <label>Genero: </label>
+                    <div>
+                        <label for="fem">Femenino</label>
+                        <input class="gen" id="fem" type="radio" name="genero" value="F" />
+                    </div>
+                    <div>
+                        <label for="mas">Masculino</label>
+                        <input class="gen" id="mas" type="radio" name="genero" value="M" />
+                    </div>
+                    <div>
+                        <label for="otro">Otro</label>
+                        <input class="gen" id="otro" type="radio" name="genero" value="O" />
+                    </div>
+                </div>
+                   <!-- Seleccion -->
+                <div class="seleccion">
+                    <label>Estado Civil:</label>
+                    <select name="estadoC" id="estadoC" class="formItem">
+                        <option value="0">Seleccione...</option> 
+                        <option value="sol">Soltero</option>
+                        <option value="cas">casado</option>
+                        <option value="viu">Viudo</option>
+                        <option value="ot">Otro</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <h4>Subir CV</h4>
+                    <input id="fileupload" type="file" name="Subir Archivo" /> 
+                    <button id="upload-button" onclick="uploadFile()"> Subir Archivo </button>
+                </div>
+                <div>
+                    No soy un robot <input type="checkbox" name="nosoyunrobot" value="1" id="nosoyunrobot"   class="formItem sus" />
+                </div>
+                <div class="text-center">
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                    <input type="reset" class="btn btn-primary" value="Cancelar">
+                </div>
+
+            </form>
+        </div>
+        </article>
+    </section>
+    <section class="sec5">
+        <a href="Espinoza_Dayanna.html"> ← Sobre Nosotros</a>
+    </section>
+
+    <footer>
+        <div class="logof">
+            <img src="./img/logo.PNG" alt="Logo">
+        </div>
+    
+        <div class="about-us">
+            <h3>Nosotros</h3>
+            <p>Contamos con cuatro talleres especializados para las marcas: Chevrolet, Hyundai, Kía, Ford, Mazda, Toyota, Nissan, Renault, Audi y Volkswagen.</p>
+        </div>
+        <div class="contactanos">
+            <h3>Contáctenos</h3>
+            <ul>
+                <li><span><img src="#" alt=""></span>(04) 2123456</li>
+                <li><span><a style="color: white;" href="mailto:Padarikeismotors@gmail.com">PADARIKEIS AUTOMOTORS</a></span></li>
+                <li><span><img src="#" alt=""></span>Ciudadeal "El guasmo"</li>
+            </ul>
+        </div>
+        <div class="Horario">
+            <h3>Horario de atención</h3>
+            <p>09:00 AM - 18:00 PM</p>
+        </div>
+    </footer>
+    
+    <script src="js/validaciones.js"></script>
+    <script >
+        async function uploadFile() {
+           //creating form data object and append file into that form data
+               let formData = new FormData(); 
+              formData.append("file", fileupload.files[0]);
+           //network request using POST method of fetch
+            await fetch('PASTE_YOUR_URL_HERE', { 
+             method: "POST", 
+             body: formData
+             }); 
+          alert('Archivo subido de manera exitosa!');
+        }
+        function alerta(){
+    if( txtCedula.value ==="", txtNombres.value ==='',txtApellidos.value ==='',txtTelefono.value ==="", txtemail.value ==='' && txtfecha.value ==="");
+    alert(" Error: Datos Incompletos");
+}
+    </script>
+
+</body>
+
+
+

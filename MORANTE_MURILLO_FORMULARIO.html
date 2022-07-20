@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos1.css">
+    <meta name="KeyWords" content="HTML5, CSS">
+    <title> FORMULARIO DE CAPACITACIONES</title>
+
+    <style>
+        body {
+            background-image: url("img/fondotaller.jpg");
+            background-size: 90vw 90vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/DeadbyDaylight.jpeg" alt="Logo">
+        </div>
+
+        <nav class="lis-inicio">
+            <ul>
+                <li><a href="MongeFrank.html">Inicio</a></li>
+                <li><a href="Espinoza_Dayanna.html">Nosotros</a></li>
+                <li><a href="CalderonPaul.html">Servicios</a></li>
+                <li><a href="Soria.html">Catalogo</a></li>
+                <li><a href="MORANTE_MURILLO_CAPACITACIONES.html">Capacitacion</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- FORMULARIO-->
+    <form class="formulario" id="formulario">
+        <div class="tema">
+            <h4>REGISTRO DE CAPACITACIONES</h4>
+        </div>
+        <!-- Ingreso por texto-->
+        <div class="grupoform" id="grupo-nombre">
+            <label  for="Nombre" class="grupouser">Nombres</label>
+            <div class="grupoform-input">
+                <input type="text" class="control" name="nombre" id="Nombre" placeholder="INGRESE SU NOMBRE">
+            </div>
+            <p class="control_error">Ingrese solo letras.</p>
+        </div>
+
+        <div class="grupoform" id="grupo-apellido">
+            <label for="Apellido" class="grupouser">Apellidos</label>
+            <div class="grupoform-input">
+                <input type="text" class="control" name="apellido" id="Apellido" placeholder="INGRESE SU APELLIDO">
+            </div>
+            <p class="control_error">Ingrese solo letras</p>
+        </div>
+
+        <div class="grupoform" id="grupo-correo">
+            <label for="correo" class="grupouser">Correo Electronico</label>
+            <div class="grupoform-input">
+                <input class="control" type="email" name="correo" id="correo" placeholder="INGRESE SU CORREO">
+            </div>
+            <p class="control_error">Ingrese un correo electronico valido</p>
+        </div>
+
+        <div class="grupoform" id="grupo-contraseña">
+            <label for="contraseña" class="grupouser">Ingrese una Contraseña</label>
+            <div class="grupoform-input">
+                <input class="control" type="password" name="contraseña" id="contraseña" placeholder="CONTRASEÑA">
+            </div>
+            <p class="control_error">Ingrese una contraseña</p>
+        </div>
+
+        <div class="grupoform" id="grupo-confirmacion_contraseña">
+            <label for="confirmacion_contraseña" class="grupouser">Ingrese una Contraseña</label>
+            <div class="grupoform-input">
+                <input class="control" type="password" name="confirmacion_contraseña" id="confirmacion_contraseña" placeholder="CONTRASEÑA">
+            </div>
+            <p class="control_error">Ambas contraseñas deben de ser iguales</p>
+        </div>
+        
+
+        <!-- Seleccion -->
+        <div class="grupoform" id="Grupo-select">
+            <label class="grupo-user">Selecciona una Opción de Capacitacion:</label>
+            <select name="seleccion" id="grupo-select">
+					<option value="opcion1">Lubricantes</option>
+					<option value="opcion2">Salud ocupacional</option>
+					<option value="opcion2">Importancia de los Lubricantes</option>
+					<option value="opcion2">Seguridad industrial y Seguros Medicos</option>
+				</select>
+            <p class="control_error">Seleccione una opcion</p>
+        </div>
+
+        <!-- Seleccion -->
+        <div class="mensajeform" id="mensajeform">
+            <p><b>Error: </b>Por favor rellene el formulario correctamente </p>
+        </div>
+
+            
+
+        <div class="grupoform grupo-enviar">
+            <button type="submit" class="boton_registrar">Registrarse</button>
+            <p  class="mensajeform-exito" id="mensajeform-exito">Formulario enviado correctamente</p>
+            <p class="inicio"><a href="MORANTE_MURILLO_CAPACITACIONES.html">Volver a Capacitaciones</a></p>
+        </div>
+
+        
+    </form>
+
+<!--FOOTER-->
+    <footer>
+        <div class="logof">
+            <img src="img/DeadbyDaylight.jpeg" alt="Logo">
+        </div>
+
+        <div class="about-us">
+            <h3>Nosotros</h3>
+            <p>Contamos con cuatro talleres especializados para las marcas: Chevrolet, Hyundai, Kía, Ford, Mazda, Toyota, Nissan, Renault, Audi y Volkswagen.</p>
+        </div>
+        <div class="contactanos">
+            <h3>Contáctenos</h3>
+            <ul>
+                <li><span><img src="#" alt=""></span>(04) 2123456</li>
+                <li><span><a style="color: white;" href="mailto:Padarikeismotors@gmail.com">PADARIKEIS AUTOMOTORS</a></span></li>
+                <li><span><img src="#" alt=""></span>Ciudadela "El guasmo"</li>
+            </ul>
+        </div>
+        <div class="Horario">
+            <h3>Horario de atención</h3>
+            <p>09:00 AM - 18:00 PM</p>
+        </div>
+    </footer>
+
+    <script>
+        const formulario = document.getElementById('formulario');
+        const inputs = document.querySelectorAll('#formulario input');
+        const expresiones = {
+            nombre: /^[a-zA-Z\s]{1,40}$/, // Letras, numeros, guion y guion bajo
+            apellido: /^[a-zA-Z\s]{1,40}$/, // /*Letras y espacios, puede llevar acentos*/
+            correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+            pass: /^[a-zA-Z0-9\_\-]{4,30}$/, // Letras, numeros, guion y guion bajo
+            confirmacion_contraseña: /^[a-zA-Z0-9\_\-]{4,30}$/, // Letras, numeros, guion y guion bajo
+        }
+
+        const campos = {
+            nombre: false,
+            apellido: false,
+            correo: false,
+            pass: false
+        }
+
+        const validarFrom = (e) => {
+            switch (e.target.name) {
+                case "nombre":
+                    validarCamp(expresiones.nombre, e.target, 'nombre');
+                    break;
+                case "apellido":
+                    validarCamp(expresiones.apellido, e.target, 'apellido');
+                    break;
+                case "correo":
+                    validarCamp(expresiones.correo, e.target, 'correo');
+                    break;
+                case "contraseña":
+                    validarCamp(expresiones.pass, e.target, 'contraseña');
+                    break;
+                case "confirmacion_contraseña":
+                    validarContra2(expresiones.confirmacion_contraseña, e.target, 'confirmacion_contraseña');
+                    break;
+            }
+        }
+
+        const validarCamp = (expresion, input, campo) => {
+            if (expresion.test(input.value)) {
+                document.querySelector(`#grupo-${campo} .control_error`).classList.remove('control_error-activo')
+                campos[campo] = true;
+            } else {
+                document.querySelector(`#grupo-${campo} .control_error`).classList.add('control_error-activo')
+                campos[campo] = false;
+            }
+        }
+
+        const validarContra2 = () => {
+            const inputPass = document.getElementById('contraseña');
+            const inputPass2 = document.getElementById('confirmacion_contraseña');
+
+            if (inputPass.value == inputPass2.value) {
+                document.querySelector(`#grupo-confirmacion_contraseña .control_error`).classList.remove('control_error-activo')
+                campos['pass'] = true;
+
+            } else {
+                document.querySelector('#grupo-confirmacion_contraseña .control_error').classList.add('control_error-activo')
+                campos['pass'] = false;
+            }
+        }
+
+        inputs.forEach((input) => {
+            input.addEventListener('keyup', validarFrom);
+            input.addEventListener('blur', validarFrom);
+        });
+
+        formulario.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log(campos.nombre, " ",campos.apellido, " ", campos.correo, " ", campos.pass);
+            if (campos.nombre && campos.apellido && campos.correo && campos.pass) {
+                document.getElementById('mensajeform-exito').classList.add('mensajeform-exito-activo');
+                setTimeout(()=>{
+                    document.getElementById('mensajeform-exito').classList.remove('mensajeform-exito-activo');
+    
+                },3000)
+            } else {
+                document.getElementById('mensajeform').classList.add('mensajeform-activo');
+
+                setTimeout(()=>{
+                    document.getElementById('mensajeform').classList.remove('mensajeform-activo');
+    
+                },3000)
+            }
+        })
+    </script>
+
+</body>
+
+</html>
