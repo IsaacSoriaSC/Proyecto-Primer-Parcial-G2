@@ -1,0 +1,135 @@
+html {
+    /* font-size: 62.5%; */ /* 1rem = 10px */
+    box-sizing: border-box;
+}
+
+body {
+    /* font-size: 1.5rem; */
+    /* font-family: sans-serif; */
+    margin: 0;
+    background-color: #0d1024;
+    color: #f4f4f4;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* estilos formularios */
+.formularios{
+    font-size: 18px;
+}
+
+.sec4{
+    padding: 0 100px;
+    margin-bottom: 20px;
+}
+.sec4 h1{
+    text-align: center;
+    font-size: 25px;
+    background-color: #bfbfbf3d;
+    border-radius: 5px;
+    padding: 5px;   
+}
+.sec4 h2{
+    font-size: 20px;
+}
+.sec4 h3{
+    font-size: 2Opx;
+    font-style: normal;
+}
+
+.sec4 h4{
+    font-size: 2Opx;
+    font-style: normal;
+}
+
+.sec5 a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    background-color: #bfbfbf3d;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.sec5 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sec5:hover {
+    cursor: pointer;
+}
+
+input {
+    outline:  none;
+}
+
+.formularios form {
+    border: 1px solid white;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 15px;
+}
+
+label {
+    line-height: 40px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 100%;
+    height: 30px;
+}
+
+.genero {
+    display: flex;
+    gap: 20px
+}
+
+.eleccion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seleccion label {
+    flex-basis: 20%;
+}
+
+.seleccion select {
+    flex-basis: 80%;
+    height: 30px;
+}
+
+.text-center {
+    text-align: right;
+}
+
+.text-center input:first-of-type {
+    margin-right: 10px;
+}
+
+.text-center input {
+    padding: 5px 10px;
+}
+.mensajeform p {
+      margin: 0;
+      padding-top: 12px;
+}
+
+.mensajeform-activo {
+       display: block;
+}
+.mensajeform-exito {
+       margin-top: 10px;
+       font-size: 14px;
+      display: none;
+}
+
+.mensajeform-exito-activo {
+         display: block;
+}

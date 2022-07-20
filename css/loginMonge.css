@@ -1,0 +1,111 @@
+main .login{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    width: 600px;
+    height: auto;
+    margin: 2%;
+    text-align: center;
+    border: 3px solid #0D1024;
+    border-radius: 20px;
+    margin-left: 500px;;
+}
+.login a{
+    color: #5065ef;
+    text-decoration: underline #5065ef;
+    font-size: 15pt;
+}
+main .login h2{
+    font-size: 25pt;
+    font-weight: bold;
+    color: #0D1024;
+    margin: 35px;
+    
+} 
+.login .login__container--form{
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.login__container--form .input{
+    width: 70%;
+    height: 30px;
+    border: none;
+    border-bottom: 3px solid #0D1024;
+    outline: none;
+    margin: 15px auto;
+    color: #354ce4;
+    font-size: 20pt;
+    font-family: 'Times New Roman', Times, serif;
+}
+.login__container--form .input::placeholder{
+    color:#0D1024;
+}
+.login__container--form .button{
+    width: 70%;
+    margin: 30px auto;
+    height: 40px;
+    border-radius: 20px;
+    text-decoration: none;
+    
+    border: 1px solid #0D1024;
+    background-color: #2b3367;
+    color:white;
+    font-size: 18pt;
+    cursor: pointer;
+}
+.login__container--remember-me{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    max-width: 400px;
+    font-size: 18pt;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    
+}
+.login__container--remember-me input{
+    cursor: pointer;
+}
+.login__container--remember-me label{
+    cursor: pointer;
+    font-size: 15pt;
+}
+.login__container--social-media{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    font-size:12pt;
+    margin: auto;
+    margin-bottom: 20px;  
+}
+
+.login__container--social-media h5{
+    display: none;
+}
+.login__container--social-media div{
+    display: flex;
+    justify-content: flex-start;
+}
+.login__container--social-media img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.login__container--social-media span{
+    vertical-align:super;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.login__container--register{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 15pt;
+    margin-bottom: 20px;
+}
+.login__container--register a{
+    margin-left: 10px;
+}

@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 140px;
+    height: 110px;
+    margin-left: 30px;
+}
+
+.lis-inicio ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.lis-inicio a {
+    text-decoration: none;
+    color: white;
+}
+
+.lis-inicio a:hover {
+    color: #9dae2b;
+}
+
+.lis-inicio {
+    min-width: 500px;
+    width: 800px;
+}
+
+
+
+body footer {
+    font-size: 15pt;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+}
+
+
+
+
+footer .contactanos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px 0;
+    list-style: circle;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.logof img {
+    display: flex;
+    width: 140px;
+    height: 150px;
+    margin-left: 30px;
+}
+
+
+
+
+
+
+
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+main {
+    display: flex;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+
+.formulario_registro {
+    display: flex;
+    flex-direction: column;
+    border: black solid 2px;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    min-width: 300px;
+    max-width: 600px;
+    height: auto;
+}
+
+.formulario_registro .contenido {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.formulario_registro .label {
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.formulario_registro input,
+.formulario-registro select {
+    padding: 10px;
+
+
+}
+
+.formulario_registro .datos {
+    font-size: medium;
+}
+
+.formulario_registro .boton {
+    width: 30%;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border: black solid 2px;
+    border-radius: 10px;
+    background-color: #4779cf;
+    font-size: 16px;
+    align-self: center;
+
+}
